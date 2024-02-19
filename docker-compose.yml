@@ -1,0 +1,8 @@
+services:
+
+  cache:
+    image: redis:latest
+    volumes:
+      - ./.Docker/cache/data:/data
+    ports:
+      - 6379:6379
